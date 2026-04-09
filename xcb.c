@@ -30,7 +30,7 @@ void create_window() {
 
   /* make the background pixmap for the window */
   pid = xcb_generate_id(c);
-  xcb_create_pixmap(c, screen->root_depth, pid, screen->root, 500, 500);
+  xcb_create_pixmap(c, screen->root_depth, pid, screen->root, 1024, 740);
 
   /* context for filling with white */
   fill = xcb_generate_id(c);
